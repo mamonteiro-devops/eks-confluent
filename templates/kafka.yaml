@@ -8,6 +8,6 @@ spec:
   image:
     application: confluentinc/cp-server:7.3.0
     init: confluentinc/confluent-init-container:2.5.0
-  dataVolumeCapacity: 10Gi
+  dataVolumeCapacity: 2Gi
   metricReporter:
     enabled: true
