@@ -1,3 +1,4 @@
+{{ if .Values.kafka.enabled }}
 apiVersion: platform.confluent.io/v1beta1
 kind: Kafka
 metadata:
@@ -11,3 +12,4 @@ spec:
   dataVolumeCapacity: 2Gi
   metricReporter:
     enabled: true
+{{ end }}    

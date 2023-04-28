@@ -9,6 +9,3 @@ schema_registry:
 
 kafka_rest_proxy:
   enabled: true
-
-zookeeper:
-  enabled: true

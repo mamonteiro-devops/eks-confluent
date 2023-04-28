@@ -1,3 +1,4 @@
+{{ if .Values.schema_registry.enabled }}
 apiVersion: platform.confluent.io/v1beta1
 kind: SchemaRegistry
 metadata:
@@ -8,3 +9,4 @@ spec:
   image:
     application: confluentinc/cp-schema-registry:7.3.0
     init: confluentinc/confluent-init-container:2.5.0
+{{ end }}    

@@ -1,3 +1,4 @@
+{{ if .Values.zookeeper.enabled }}
 apiVersion: platform.confluent.io/v1beta1
 kind: Zookeeper
 metadata:
@@ -10,3 +11,4 @@ spec:
     init: confluentinc/confluent-init-container:2.5.0
   dataVolumeCapacity: 2Gi
   logVolumeCapacity: 1Gi
+{{ end }}  
