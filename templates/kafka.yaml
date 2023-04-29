@@ -12,4 +12,10 @@ spec:
   dataVolumeCapacity: 2Gi
   metricReporter:
     enabled: true
+  listeners:
+    external:
+      authentication:
+        type: plain
+        jaasConfig:
+          secretRef: credential  
 {{ end }}    
