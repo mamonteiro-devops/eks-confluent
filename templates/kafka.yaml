@@ -13,6 +13,11 @@ spec:
   metricReporter:
     enabled: true
   listeners:
+    internal:
+      authentication:
+        type: plain
+        jaasConfig:
+          secretRef: credential  
     external:
       authentication:
         type: plain
