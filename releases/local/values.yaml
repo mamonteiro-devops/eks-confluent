@@ -2,4 +2,4 @@ kafka_rest_proxy:
   enabled: false
 
 control_center:
-  enabled: false  
+  enabled: true  
