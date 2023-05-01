@@ -40,10 +40,4 @@ spec:
   kafkaClusterRef:
     name: kafka
     namespace: confluent
-  # kafkaRest:
-  #   authentication:
-  #     type: bearer
-  #     bearer:
-  #       secretRef: {{ required "Set the secret name for KafkaRestClass to authenticate with MDS to the .Values.auth.users.kafka.secretRef variable!" .Values.auth.users.kafka.secretRef }}
-
 {{ end }}    
