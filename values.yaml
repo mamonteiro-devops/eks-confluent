@@ -12,3 +12,6 @@ kafka_rest_proxy:
 
 zookeeper:
   enabled: true
+
+control_center:
+  enabled: true

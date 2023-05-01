@@ -1,5 +1,2 @@
-connector:
-  enabled: false
-
 kafka_rest_proxy:
   enabled: false
