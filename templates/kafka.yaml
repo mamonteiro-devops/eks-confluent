@@ -20,11 +20,11 @@ spec:
     #       secretRef: credential
     #   tls:
     #     enabled: false 
-    external:
-      authentication:
-        type: plain
-        jaasConfig:
-          secretRef: credential
-      tls:
-        enabled: false           
+    # external:
+    #   authentication:
+    #     type: plain
+    #     jaasConfig:
+    #       secretRef: credential
+    #   tls:
+    #     enabled: false           
 {{ end }}    
