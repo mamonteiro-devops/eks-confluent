@@ -16,6 +16,9 @@ spec:
       - User:kafka-master
   metricReporter:
     enabled: true
+  configOverrides:
+    server:
+      - authorizer.class.name=kafka.security.authorizer.AclAuthorizer
   listeners:
     # internal:
     #   authentication:
