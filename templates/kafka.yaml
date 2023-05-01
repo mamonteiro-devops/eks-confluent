@@ -13,7 +13,7 @@ spec:
   authorization:
     type: rbac
     superUsers:
-      - User: kafka-master
+      - User:kafka-master
   metricReporter:
     enabled: true
   listeners:
