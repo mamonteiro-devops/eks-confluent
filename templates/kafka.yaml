@@ -10,6 +10,10 @@ spec:
     application: confluentinc/cp-server:7.3.0
     init: confluentinc/confluent-init-container:2.5.0
   dataVolumeCapacity: 2Gi
+  authorization:
+    type: rbac
+    superUsers:
+      - User: kafka-master
   metricReporter:
     enabled: true
   listeners:
@@ -20,11 +24,26 @@ spec:
     #       secretRef: credential
     #   tls:
     #     enabled: false 
-    # external:
-    #   authentication:
-    #     type: plain
-    #     jaasConfig:
-    #       secretRef: credential
-    #   tls:
-    #     enabled: false           
+    external:
+      authentication:
+        type: plain
+        jaasConfig:
+          secretRef: credential
+      tls:
+        enabled: false
+---
+apiVersion: platform.confluent.io/v1beta1
+kind: KafkaRestClass
+metadata:
+  name: kafka
+spec:
+  kafkaClusterRef:
+    name: kafka
+    namespace: confluent
+  # kafkaRest:
+  #   authentication:
+  #     type: bearer
+  #     bearer:
+  #       secretRef: {{ required "Set the secret name for KafkaRestClass to authenticate with MDS to the .Values.auth.users.kafka.secretRef variable!" .Values.auth.users.kafka.secretRef }}
+
 {{ end }}    
