@@ -11,7 +11,7 @@ spec:
     init: confluentinc/confluent-init-container:2.5.0
   dataVolumeCapacity: 2Gi
   authorization:
-    type: rbac
+    type: simple
     superUsers:
       - User:kafka-master
   metricReporter:
