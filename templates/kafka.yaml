@@ -37,4 +37,8 @@ spec:
           secretRef: credential
       tls:
         enabled: true
+  authorization:
+    type: simple
+    superUsers:
+    - User:kafka        
 {{ end }}    
