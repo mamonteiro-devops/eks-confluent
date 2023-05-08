@@ -21,7 +21,7 @@ spec:
     external:
       authentication:
         type: plain
-        jaasConfigPassThrough:
+        jaasConfig:
           secretRef: credential
     internal:
       authentication:
