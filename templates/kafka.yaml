@@ -35,11 +35,11 @@ spec:
     bootstrapEndpoint: kafka:9092
     authentication:
       type: plain
-        jaasConfig:
-          secretRef: credential
+      jaasConfig:
+        secretRef: credential
     tls:
-      enabled: true
-      
+      enabled: false
+
   dependencies:
     zookeeper:
       endpoint: zookeeper.confluent.svc.cluster.local:2182
