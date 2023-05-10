@@ -20,4 +20,13 @@ spec:
           secretRef: credential
       tls:
         enabled: true
+  configOverrides:
+    server:
+      ## Disable refresh MDS servers request because we are using Kubernetes DNS
+      - confluent.metadata.enable.server.urls.refresh=false
+    jvm:
+      ### https://docs.confluent.io/platform/current/schema-registry/installation/deployment.html
+      ## Recomended is 1GB of Heap.
+      - "-Xms256m"
+      - "-Xmx1g"        
 {{ end }}    
