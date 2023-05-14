@@ -19,7 +19,7 @@ spec:
   externalAccess:
     type: nodePort
     nodePort:
-      host: myoperator2.confluent.svc.cluster.local:8081
+      host: myoperator2.confluent.svc.cluster.local
       nodePortOffset: 30021
   dependencies:
     kafka:
