@@ -41,7 +41,7 @@ spec:
   listeners:
     external:
       externalAccess:
-        type: NodePort               
+        type: nodePort             
  
     # ksqldb:
     # - name: ksql-dev
