@@ -19,10 +19,9 @@ spec:
   listeners:
     external:
       externalAccess:
-        type: nodePort             
-        nodePort:
-          nodePortOffset: 30021
-          host: "0.0.0.0"    
+        type: loadBalancer             
+        loadBalancer:
+          domain: "localhost"
   dependencies:
     kafka:
       bootstrapEndpoint: kafka.confluent.svc.cluster.local:9071
