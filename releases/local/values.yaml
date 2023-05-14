@@ -3,3 +3,8 @@ kafka_rest_proxy:
 
 control_center:
   enabled: true  
+  externalAccess:
+    type: nodePort
+    nodePort:
+      host: myoperator2.confluent.svc.cluster.local
+      nodePortOffset: 30021  
