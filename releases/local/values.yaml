@@ -1,5 +1,5 @@
 kafka_rest_proxy:
-  enabled: true
+  enabled: false
 
 control_center:
   enabled: true  
