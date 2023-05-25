@@ -6,6 +6,8 @@ metadata:
   namespace: confluent
 spec:
   replicas: 2
+  storageClass:
+    name: gp2-retain-expandable  
   image:
     application: confluentinc/cp-server:7.4.0
     init: confluentinc/confluent-init-container:2.6.0
