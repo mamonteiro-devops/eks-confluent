@@ -9,7 +9,7 @@ spec:
   image:
     application: confluentinc/cp-server:7.4.0
     init: confluentinc/confluent-init-container:2.6.0
-  dataVolumeCapacity: 2Gi
+  dataVolumeCapacity: 3Gi
   configOverrides:
     server:
       - confluent.cluster.link.enable=true
