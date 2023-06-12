@@ -5,7 +5,7 @@ connector:
   enabled: true
 
 schema_registry:
-  enabled: true
+  enabled: false
 
 kafka_rest_proxy:
   enabled: true
@@ -14,5 +14,5 @@ zookeeper:
   enabled: true
 
 control_center:
-  enabled: true
+  enabled: false
   externalAccess: {}

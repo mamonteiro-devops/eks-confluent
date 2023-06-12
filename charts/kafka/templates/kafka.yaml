@@ -5,7 +5,7 @@ metadata:
   name: kafka
   namespace: confluent
 spec:
-  replicas: 2
+  replicas: 1
   storageClass:
     name: gp2-retain-expandable  
   image:
